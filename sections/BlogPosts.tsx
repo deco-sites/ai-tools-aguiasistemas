@@ -78,15 +78,10 @@ export default function BlogPosts({
             <div class="border border-secondary rounded-lg overflow-hidden">
               <a href={post.url} target="_blank" rel="noopener noreferrer">
                 <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
-                  <Image
-                    width={640}
-                    height={360} // Define uma altura padrão para todas as imagens
-                    class="object-contain w-full h-full" // Ajusta a classe CSS para garantir o tamanho uniforme
-                    sizes="(max-width: 640px) 100vw, 30vw"
+                  <img
                     src={post.image}
-                    alt={post.image}
-                    decoding="async"
-                    loading="lazy"
+                    alt={post.title}
+                    class="w-full h-full object-contain"
                   />
                 </div>
                 <div class="p-6 space-y-4">

@@ -9,17 +9,53 @@
       "__resolveType": "site/sections/Hero.tsx",
       "title": "<h3><strong><span style=\"color: rgb(0, 0, 0)\">&lt;AI/Tools&gt;</span></strong></h3>",
       "cta": [],
-      "description": "Esta página lista as ferramentas de IA que foram homologadas para uso na empresa. As ferramentas listadas aqui foram cuidadosamente avaliadas e atendem aos nossos altos padrões de segurança, confiabilidade e desempenho.  Explore as ferramentas disponíveis e descubra como elas podem auxiliar na otimização de nossos processos e projetos."
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
+      "description": "Esta página lista as ferramentas de IA que foram homologadas para uso na empresa. As ferramentas listadas aqui foram cuidadosamente avaliadas e atendem aos nossos altos padrões de segurança, confiabilidade e desempenho. "
     },
     {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/9c31dc45-2cbd-4d63-9f52-51170898df7e",
+      "title": "IA: O que é?",
+      "description": "A Inteligência Artificial (IA) refere-se à capacidade das máquinas de realizarem tarefas que normalmente requerem inteligência humana. Isso inclui a capacidade de aprender, raciocinar, resolver problemas, compreender a linguagem natural, perceber o ambiente e tomar decisões. IA é uma disciplina ampla que abrange várias tecnologias, incluindo aprendizado de máquina (machine learning), redes neurais, processamento de linguagem natural (NLP), visão computacional e mais.",
+      "tagline": "A integração da IA no cotidiano torna as tarefas mais eficientes, proporcionando conveniência e melhorando a experiência do usuário em várias áreas.",
+      "disableSpacing": {
+        "bottom": true,
+        "top": true
+      }
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx"
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right",
+      "title": "Prompt",
+      "description": "Para interagir com um modelo de IA, é essencial iniciar com um prompt, que pode ser uma pergunta, uma solicitação ou qualquer outro tipo de comando. Este prompt serve como base para a IA desenvolver e apresentar uma resposta.\n",
+      "tagline": "Os prompts são instruções ou mensagens iniciais que guiam o modelo de linguagem na produção de respostas. Eles servem para fornecer contexto e orientar a direção da conversa, moldando as respostas do modelo.",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/db012690-5590-4214-9193-b4a1abca7180",
+      "disableSpacing": {
+        "top": true,
+        "bottom": true
+      }
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "description": "Explore as ferramentas disponíveis e descubra como elas podem auxiliar na otimização de nossos processos e projetos.",
+      "title": "Aqui estão as ferramentas",
+      "posts": [
+        {
+          "tags": [],
+          "title": "ChatGPT",
+          "author": "OpenAI",
+          "excerpt": "Um modelo de linguagem avançado que gera texto, responde perguntas e mantém conversas, útil para suporte ao cliente, automação de tarefas e criação de conteúdo.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/2c28f6f3-2b7c-4c58-b023-8a298f552957",
+          "url": "https://chatgpt.com/",
+          "date": "11/06/2024"
+        },
+        {
+          "tags": [],
+          "title": "Gemini",
+          "author": "Google",
+          "excerpt": "Ferramenta de IA que oferece insights e análises avançadas, usada principalmente para otimização de campanhas de marketing e decisões baseadas em dados.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/d0f312f8-b207-4c9d-b39b-01270ed5de3e"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Testimonials.tsx"

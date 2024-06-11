@@ -104,5 +104,13 @@
   "/.deco/blocks/Preview%20%2Fsections%2FLogos.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Logos.tsx"
+  },
+  "/.deco/blocks/My%20Theme.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FBlogPosts.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/BlogPosts.tsx"
   }
 }

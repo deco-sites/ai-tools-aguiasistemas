@@ -9,6 +9,7 @@ export interface Post {
   date: string;
   readingTime?: string;
   tags: string[];
+  url: string; // Nova propriedade para o link
 }
 
 export interface Props {
@@ -33,6 +34,7 @@ export default function BlogPosts({
       date: "01 Apr 2024",
       readingTime: "10 min",
       tags: ["Tag #1", "Tag #2", "Tag #3"],
+      url: "https://example.com/blogpost1"
     },
     {
       title: "Title of blogpost #2",
@@ -43,6 +45,7 @@ export default function BlogPosts({
       date: "01 Apr 2024",
       readingTime: "10 min",
       tags: ["Tag #1", "Tag #2", "Tag #3"],
+      url: "https://example.com/blogpost2"
     },
     {
       title: "Title of blogpost #3",
@@ -53,6 +56,7 @@ export default function BlogPosts({
       date: "01 Apr 2024",
       readingTime: "10 min",
       tags: ["Tag #1", "Tag #2", "Tag #3"],
+      url: "https://example.com/blogpost3"
     },
   ],
 }: Props) {
@@ -72,34 +76,39 @@ export default function BlogPosts({
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {posts?.map((post) => (
             <div class="border border-secondary rounded-lg overflow-hidden">
-              <Image
-                width={640}
-                class="w-full object-fit z-10"
-                sizes="(max-width: 640px) 100vw, 30vw"
-                src={post.image}
-                alt={post.image}
-                decoding="async"
-                loading="lazy"
-              />
-              <div class="p-6 space-y-4">
-                <div class="font-semibold">{post.readingTime}</div>
-                <div class="space-y-2">
-                  <h3 class="text-2xl">{post.title}</h3>
-                  <p class="text-base">{post.excerpt}</p>
+              <a href={post.url} target="_blank" rel="noopener noreferrer">
+                <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                  <Image
+                    width={640}
+                    height={360} // Define uma altura padrão para todas as imagens
+                    class="object-contain w-full h-full" // Ajusta a classe CSS para garantir o tamanho uniforme
+                    sizes="(max-width: 640px) 100vw, 30vw"
+                    src={post.image}
+                    alt={post.image}
+                    decoding="async"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="flex flex-wrap gap-2">
-                  {post.tags?.map((tag) => (
-                    <div class="badge badge-lg badge-primary text-xs">
-                      {tag}
-                    </div>
-                  ))}
+                <div class="p-6 space-y-4">
+                  <div class="font-semibold">{post.readingTime}</div>
+                  <div class="space-y-2">
+                    <h3 class="text-2xl">{post.title}</h3>
+                    <p class="text-base">{post.excerpt}</p>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    {post.tags?.map((tag) => (
+                      <div class="badge badge-lg badge-primary text-xs">
+                        {tag}
+                      </div>
+                    ))}
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span>{post.date}</span>
+                    <span>•</span>
+                    <span>{post.author}</span>
+                  </div>
                 </div>
-                <div class="flex flex-wrap gap-2">
-                  <span>{post.date}</span>
-                  <span>•</span>
-                  <span>{post.author}</span>
-                </div>
-              </div>
+              </a>
             </div>
           ))}
         </div>

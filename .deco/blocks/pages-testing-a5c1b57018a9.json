@@ -1,0 +1,35 @@
+{
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<h3><strong><span style=\"color: rgb(0, 0, 0)\">&lt;AI/Tools&gt;</span></strong></h3>",
+      "cta": [],
+      "description": "Esta página lista as ferramentas de IA que foram homologadas para uso na empresa. As ferramentas listadas aqui foram cuidadosamente avaliadas e atendem aos nossos altos padrões de segurança, confiabilidade e desempenho.  Explore as ferramentas disponíveis e descubra como elas podem auxiliar na otimização de nossos processos e projetos."
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right"
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -33,7 +33,7 @@ const DEFAULT_IMAGE =
 export default function ImageWithParagraph({
   title = "Here's an intermediate size heading you can edit",
   description =
-    "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+    "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, ou dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, ou anything in between, editing is just a click away.",
   tagline = "Tagline",
   image = DEFAULT_IMAGE,
   placement = "left",
@@ -52,7 +52,7 @@ export default function ImageWithParagraph({
           disableSpacing?.top ? "" : "pt-12 lg:pt-28"
         } ${disableSpacing?.bottom ? "" : "pb-12 lg:pb-28"}`}
       >
-        <div class="w-full md:w-1/2 border border-secondary rounded-lg overflow-hidden">
+        <div class="w-full md:w-1/2 border border-secondary rounded-lg overflow-hidden animate-float">
           <Image
             width={640}
             height={640}
@@ -106,6 +106,25 @@ export default function ImageWithParagraph({
           </div>
         </div>
       </div>
+
+      {/* CSS for animation */}
+      <style jsx>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(10px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 }

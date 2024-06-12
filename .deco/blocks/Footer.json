@@ -1,1 +1,10 @@
-{"__resolveType":"site/sections/Footer.tsx","links":[],"bottomLinks":[],"social":[],"subscribe":{}}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [],
+  "bottomLinks": [],
+  "social": [],
+  "subscribe": {
+    "instructions": "<p>Se você tiver alguma dúvida sobre as ferramentas de IA homologadas, entre em contato com o departamento de TI, através do canal exclusivo para IA, pelo endereço de e-mail <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"mailto:Suporte.IA@aguiasistemas.com.br\"><u><span style=\"color: #dbf2f5\">Suporte.IA@aguiasistemas.com.br</span></u></a>.</p><p></p><p><strong>Importante</strong>: O uso de ferramentas de IA não homologadas é <strong>proibido</strong>.</p>",
+    "description": "Se inscreva abaixo para receber as atualizações."
+  }
+}

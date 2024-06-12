@@ -1,3 +1,4 @@
 {
-  "__resolveType": "site/sections/BlogPosts.tsx"
+  "__resolveType": "site/sections/BlogPosts.tsx",
+  "posts": []
 }

@@ -3,11 +3,9 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface Post {
   title: string;
-  author: string;
   excerpt: string;
   image: ImageWidget;
   date: string;
-  readingTime?: string;
   tags: string[];
   url: string; // Nova propriedade para o link
 }
@@ -27,34 +25,28 @@ export default function BlogPosts({
   posts = [
     {
       title: "Title of blogpost #1",
-      author: "Name of the author",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
-      readingTime: "10 min",
       tags: ["Tag #1", "Tag #2", "Tag #3"],
       url: "https://example.com/blogpost1"
     },
     {
       title: "Title of blogpost #2",
-      author: "Name of the author",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
-      readingTime: "10 min",
       tags: ["Tag #1", "Tag #2", "Tag #3"],
       url: "https://example.com/blogpost2"
     },
     {
       title: "Title of blogpost #3",
-      author: "Name of the author",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
-      readingTime: "10 min",
       tags: ["Tag #1", "Tag #2", "Tag #3"],
       url: "https://example.com/blogpost3"
     },
@@ -73,10 +65,10 @@ export default function BlogPosts({
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           {posts?.map((post) => (
-            <div class="border border-secondary rounded-lg overflow-hidden">
-              <a href={post.url} target="_blank" rel="noopener noreferrer">
+            <div class="border border-secondary rounded-lg overflow-hidden flex flex-col hover:bg-purple-700 transition-colors duration-300">
+              <a href={post.url} target="_blank" rel="noopener noreferrer" class="flex flex-col h-full">
                 <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
                   <img
                     src={post.image}
@@ -84,23 +76,20 @@ export default function BlogPosts({
                     class="w-full h-full object-contain"
                   />
                 </div>
-                <div class="p-6 space-y-4">
-                  <div class="font-semibold">{post.readingTime}</div>
-                  <div class="space-y-2">
+                <div class="p-6 flex flex-col flex-grow text-white">
+                  <div class="space-y-2 flex-grow">
                     <h3 class="text-2xl">{post.title}</h3>
                     <p class="text-base">{post.excerpt}</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                      {post.tags?.map((tag) => (
+                        <div class="badge badge-lg badge-primary text-xs">
+                          {tag}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div class="flex flex-wrap gap-2">
-                    {post.tags?.map((tag) => (
-                      <div class="badge badge-lg badge-primary text-xs">
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span>{post.date}</span>
-                    <span>•</span>
-                    <span>{post.author}</span>
+                  <div class="mt-4">
+                    <span class="block text-gray-300">{post.date}</span>
                   </div>
                 </div>
               </a>

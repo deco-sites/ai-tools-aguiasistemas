@@ -33,7 +33,7 @@ export default function Header({
     links: [
       { label: "Home", url: "/" },
       { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
+      { label: "Pricing", url: "/" },
       { label: "Contact", url: "/" },
     ],
     buttons: [
@@ -49,13 +49,19 @@ export default function Header({
       {/* main content */}
       <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
         <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+          <Image
+            src={logo.src || ""}
+            width={200} // Aumentando a largura do logo
+            height={56} // Aumentando a altura do logo
+            alt={logo.alt}
+            class="object-contain" // Garantindo que a imagem mantenha suas proporções
+          />
         </a>
 
         <div class="hidden items-center justify-between lg:flex w-full">
           <ul class="flex">
             {navigation.links.map((link) => (
-              <li>
+              <li key={link.label}>
                 <a
                   href={link.url}
                   aria-label={link.label}
@@ -104,15 +110,16 @@ export default function Header({
           <a class="p-4" href="/">
             <Image
               src={logo.src || ""}
-              width={85}
-              height={28}
+              width={200} // Aumentando a largura do logo na sidebar
+              height={56} // Aumentando a altura do logo na sidebar
               alt={logo.alt}
+              class="object-contain" // Garantindo que a imagem mantenha suas proporções
             />
           </a>
 
           <ul class="menu">
             {navigation?.links.map((link) => (
-              <li>
+              <li key={link.label}>
                 <a href={link.url} aria-label={link.label}>
                   {link.label}
                 </a>

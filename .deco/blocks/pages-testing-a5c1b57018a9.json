@@ -30,7 +30,7 @@
       "tagline": "Os prompts são instruções ou mensagens iniciais que guiam o modelo de linguagem na produção de respostas. Eles servem para fornecer contexto e orientar a direção da conversa, moldando as respostas do modelo.",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/db012690-5590-4214-9193-b4a1abca7180",
       "disableSpacing": {
-        "top": true,
+        "top": false,
         "bottom": true
       }
     },
@@ -42,23 +42,99 @@
         {
           "tags": [],
           "title": "ChatGPT",
-          "author": "OpenAI",
           "excerpt": "Um modelo de linguagem avançado que gera texto, responde perguntas e mantém conversas, útil para suporte ao cliente, automação de tarefas e criação de conteúdo.",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/2c28f6f3-2b7c-4c58-b023-8a298f552957",
           "url": "https://chatgpt.com/",
-          "date": "11/06/2024"
+          "date": " 11/06/2024",
+          "author": "OpenAI"
         },
         {
           "tags": [],
           "title": "Gemini",
           "author": "Google",
           "excerpt": "Ferramenta de IA que oferece insights e análises avançadas, usada principalmente para otimização de campanhas de marketing e decisões baseadas em dados.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/d0f312f8-b207-4c9d-b39b-01270ed5de3e"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/d0f312f8-b207-4c9d-b39b-01270ed5de3e",
+          "date": "11/06/2024",
+          "url": "https://gemini.google.com/app"
+        },
+        {
+          "tags": [],
+          "title": "Microsoft Copilot",
+          "author": "Microsoft",
+          "excerpt": "Assistente de IA integrado ao Microsoft 365, que ajuda na criação de documentos, e-mails e planilhas, aumentando a produtividade ao fornecer sugestões e automações.",
+          "date": "11/06/2024",
+          "url": "https://www.microsoft.com/pt-br/microsoft-copilot",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/d3d51a48-0b38-446b-8c99-5a4addde9dce"
+        },
+        {
+          "tags": [],
+          "title": "Perplexity",
+          "url": "https://www.perplexity.ai/",
+          "author": "Perplexity",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/d3346319-1e12-4a70-9878-b216c5b186b0",
+          "excerpt": "Plataforma que utiliza inteligência artificial para responder a perguntas de maneira detalhada e contextualizada sobre o assunto.",
+          "date": "11/06/2024"
+        },
+        {
+          "tags": [],
+          "url": "https://www.trypromptly.com/",
+          "title": "Promptly",
+          "author": "Promptly",
+          "date": "11/06/2024",
+          "excerpt": "Use uma variedade de aplicativos e agentes de IA sem a necessidade de codificação e conhecimento prévio.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/dec625e8-e044-4593-9531-0427e0ec10c2"
+        },
+        {
+          "tags": [],
+          "title": "Gamma",
+          "excerpt": "Use a plataforma projetada para criar apresentações, documentos e conteúdos interativos de maneira rápida e intuitiva utilizando IA. ",
+          "date": "11/06/2024",
+          "url": "https://gamma.app/",
+          "author": "Gamma Tech, Inc.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/df1fb063-b3f1-485a-9c9a-602d53910d0c"
+        },
+        {
+          "tags": [],
+          "title": "Tactiq",
+          "excerpt": "Ferramenta que transcreve reuniões e conversas em tempo real, transformando áudios em textos, facilitando a documentação e o acompanhamento de reuniões.",
+          "url": "https://tactiq.io/",
+          "author": "Tactiq",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/05db2bb0-3448-4854-bf5c-bfce76e2e26e",
+          "date": "11/06/2024"
+        },
+        {
+          "tags": [],
+          "title": "Learning Studio AI",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/545f357d-72f8-4764-a0d9-ce66db32fdc5",
+          "excerpt": "Plataforma que utiliza IA para criar, personalizar e gerenciar cursos online através do assunto informado. ",
+          "author": "LearningStudioAI",
+          "url": "https://learningstudioai.com/",
+          "date": "11/06/2024"
+        },
+        {
+          "tags": [],
+          "title": "Leonardo AI",
+          "excerpt": "Plataforma de criação de arte e design baseada em IA, permitindo que artistas e designers gerem novas ideias e conceitos rapidamente, otimizando o processo criativo.",
+          "url": "https://leonardo.ai/",
+          "date": "11/06/2024",
+          "author": "Leonardo Interactive Pty Ltd",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/de42a6ce-5152-4d45-8261-687af6d662b0"
+        },
+        {
+          "tags": [],
+          "title": "Microsoft Designer",
+          "author": "Microsoft",
+          "excerpt": "Ferramenta de design assistida por IA que ajuda na criação de gráficos, layouts e outros materiais visuais de alta qualidade, acelerando o processo de design.",
+          "date": "11/06/2024",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10733/12934936-fe5d-4fff-87e9-e35c85f6d1d6",
+          "url": "https://designer.microsoft.com/"
         }
       ]
     },
     {
-      "__resolveType": "site/sections/Testimonials.tsx"
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": false,
+      "dots": true
     },
     {
       "__resolveType": "site/sections/Faq.tsx"

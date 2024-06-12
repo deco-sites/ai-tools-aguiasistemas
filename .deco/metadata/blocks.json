@@ -76,7 +76,7 @@
     "__resolveType": "decohub/apps/htmx.ts"
   },
   "/.deco/blocks/pages-testing-a5c1b57018a9.json": {
-    "name": "Home",
+    "name": "AITools",
     "path": "/",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
